@@ -1,0 +1,37 @@
+{
+  "Logging": {
+    "LogLevel": {
+      "Default": "Information",
+      "Microsoft.AspNetCore": "Warning"
+    }
+  },
+  "ConnectionStrings": {
+    "StrConnection": "Host=your_database_host_on_neon;Port=5432;Database=your_database_name;Username=your_database_username;Password=your_database_password;SSL Mode=Require;Trust Server Certificate=true"
+  },
+  "Jwt": {
+    "Key": "**Your_Secret_Key_For_JWT**",
+    "Issuer": "myIssuer",
+    "Audience": "myAudience",
+    "ExpireMinutes": 30
+  },
+  "Cloudinary": {
+    "CloudName": "your_cloud_name",
+    "ApiKey": "your_api_key",
+    "ApiSecret": "your_api_secret"
+  },
+  "ShareService": {
+    "SecretKey": "Your_Secret_Key_For_ShareService"
+  },
+  "AllowedHosts": "*",
+  "Authentication": {
+    "Google": {
+      "ClientId": "your_google_client_id",
+      "ClientSecret": "your_google_client_secret"
+    },
+    "Facebook": {
+      "AppId": "your_facebook_app_id",
+      "AppSecret": "your_facebook_app_secret"
+    }
+  },
+  "FrontendUrl": "your_frontend_url"
+}
